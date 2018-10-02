@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bem vindo ao game de Quimica"
+        android:padding="4dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/question"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:textStyle="normal"/>
+
+    <Button
+        android:id="@+id/grade10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10ª Classe"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="onGrade10Click"/>
+
+    <Button
+        android:id="@+id/grade11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="11ª Classe"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="onGrade11Click"/>
+
+    <Button
+        android:id="@+id/grade12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12ª Classe"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="onGrade12Click"/>
+
+</LinearLayout>

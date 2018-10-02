@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".grade10.Grade10ReportActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fim do jogo"
+            android:padding="4dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/question"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textStyle="normal"/>
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/grade10PdfView"
+            android:layout_below="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/grade12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jogar de Novo"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp"
+            android:onClick="onRepeatClick"/>
+
+    </LinearLayout>
+
+</ScrollView>
